@@ -1,0 +1,137 @@
+/* Navbar start */
+#login {
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    }
+    
+    #login h4 {
+    margin: 0;
+    margin-right: 40px; /* Di chuyển sang trái 20px */
+    }
+    
+    #login a {
+    text-decoration: none;
+    color:aquamarine;
+    font-weight: 800;
+    font-size: 15px;
+    }
+  
+    /* ------------------- */
+  #header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 28px;
+      background: #E3E6F3;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+    
+    #navbar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+    }
+    
+    #navbar li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    
+    #navbar li a:hover,
+    #navbar li a.active{
+      color: #088178;
+    }
+    
+    #navbar li a.actice::after,
+    #navbar li a:hover:after{
+      content: "";
+      width: 30%;
+      height: 2px;
+      background:#088178 ;
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+    }
+/* Navbar end */
+
+#shop{
+    background-image: url("../img/leomessi.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#shop h4 {
+    color:burlywood;
+    padding-bottom: 15px;
+}
+
+#shop h1 {
+    color:greenyellow;
+}
+
+#shop h2 {
+    color:darkorange;
+}
+
+#shop p {
+    color:blanchedalmond;
+}
+/* -------------Pagination start css-------------- */
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a.active{
+    text-decoration: underline;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    underline:yes;
+    border-bottom-color: black;
+    color: black;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --------------Pagination end css----------------- */
